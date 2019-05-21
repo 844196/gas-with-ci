@@ -1,6 +1,6 @@
 workflow "Push to GAS" {
   on = "push"
-  resolves = ["844196/actions/clasp@master"]
+  resolves = ["clasp push"]
 }
 
 action "Filters for GitHub Actions" {
@@ -8,15 +8,15 @@ action "Filters for GitHub Actions" {
   args = "branch master"
 }
 
-action "GitHub Action for npm" {
-  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
+action "GitHub Action for Yarn" {
+  uses = "nuxt/actions-yarn@master"
   needs = ["Filters for GitHub Actions"]
   args = "install"
 }
 
-action "844196/actions/clasp@master" {
+action "clasp push" {
   uses = "844196/actions/clasp@master"
-  needs = ["GitHub Action for npm"]
+  needs = ["GitHub Action for Yarn"]
   args = "push"
   secrets = ["CLASPRC_JSON"]
 }
