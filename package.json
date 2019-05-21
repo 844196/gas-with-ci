@@ -1,0 +1,8 @@
+{
+  "name": "gas-with-ci",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@google/clasp": "^2.1.0"
+  }
+}
