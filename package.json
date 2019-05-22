@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@google/clasp": "^2.1.0"
+    "@google/clasp": "^2.1.0",
+    "@types/google-apps-script": "^0.0.50"
   }
 }
