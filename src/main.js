@@ -1,3 +1,3 @@
 function onOpen() {
-  Browser.msgBox('こんにちは');
+  Browser.msgBox('Hello');
 }
