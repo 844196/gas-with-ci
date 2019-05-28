@@ -1,3 +1,3 @@
 function onOpen() {
-  Browser.msgBox('a');
+  Browser.msgBox('aa');
 }
